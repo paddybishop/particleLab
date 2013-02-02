@@ -1,8 +1,4 @@
-code = function get_random_color() {
-    return '#' + Math.random().toString(16).substring(4);
-    }
-
-function () {
+code = function () {
 
     var particleGenerator = function() {
         return {
