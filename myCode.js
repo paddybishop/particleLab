@@ -6,8 +6,6 @@ code = function () {
 	
     var Particle = {
         
-        color: get_random_color(),
-        
     };
 	
     
