@@ -9,7 +9,7 @@ function () {
             x: Math.random()*800,
             y: Math.random()*600,
             radius: Math.random()*15,
-            color: get_random_color(),
+            color: get_random_color();
         };
     };
     
@@ -32,24 +32,3 @@ function () {
         });
     };
 };
-
-
-
-    var Particle = {};
-
-    
-
-	var numberOfParticles = 0;
-
-	while(numberOfParticles < 500) {
-
-
-	Particle.y = Math.random()*600;
-	Particle.x = Math.random()*800;
-	Particle.radius = Math.random()*30;
-	Particle.color = get_random_color();
-	page.draw(Particle);
-
-	numberOfParticles = numberOfParticles + 1;
-
-	}
