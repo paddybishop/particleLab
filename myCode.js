@@ -15,7 +15,7 @@ code = function () {
 	
 	Particle.y = Math.random()*600;
 	Particle.x = Math.random()*800;
-	Particle.radius = Math.random()*30;
+	Particle.radius = Math.random()*60;
 	Particle.color = get_random_color();
 	page.draw(Particle);
 	
