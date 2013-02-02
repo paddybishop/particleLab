@@ -5,10 +5,8 @@ code = function () {
 	}
 	
     var Particle = {
-        x: 425,
-        y: 300,
-        radius: 25,
-        color: get_random_color(),
+        
+        
     };
 	
     
@@ -22,6 +20,7 @@ code = function () {
 	Particle.x = Math.random()*800;
 	Particle.radius = Math.random()*30;
 	page.draw(Particle);
+	color: get_random_color(),
 	numberOfParticles = numberOfParticles + 1;
 	
 	}
