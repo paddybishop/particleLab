@@ -9,7 +9,7 @@ function () {
             x: Math.random()*800,
             y: Math.random()*600,
             radius: Math.random()*15,
-            color: get_random_color();
+            color: 'blue',
         };
     };
     
