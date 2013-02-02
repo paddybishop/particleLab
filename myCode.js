@@ -4,9 +4,7 @@ code = function () {
 	return '#' + Math.random().toString(16).substring(4);
 	}
 	
-    var Particle = {
-        
-    };
+    var Particle = 0
 	
     
 	
