@@ -1,31 +1,27 @@
 code = function () {
 
-    var particleGenerator = function() {
-        return {
-            x: Math.random()*800,
-            y: Math.random()*600,
-            radius: Math.random()*15,
-            color: 'blue'
-        };
+    var orangeParticle = {
+        x: 400,
+        y: 300,
+        radius: 100,
+        color: 'orange',
     };
     
-    var maxNumberOfParticles = 500;
-    var particleArray = [];
+    var sizeChange = 1;
     
-    while (particleArray.length < maxNumberOfParticles) {
-        var newParticle = particleGenerator();
-        particleArray.push(newParticle);
-    }
-    
-    page.perFrame = function (delta) {
+    page.perFrame = function () {
         page.clear();
-
-        particleArray.forEach(function (p) {
-            if (p.y < 600) {
-                p.y = p.y + (0.3 * p.radius * delta);
-            }
-            page.draw(p);
-        });
+        
+        orangeParticle.radius = orangeParticle.radius + sizeChange;
+        
+        if (orangeParticle.radius > 150) {
+            sizeChange = -1;
+        }
+        
+        if (orangeParticle.radius < 75) {
+            sizeChange = 1;
+        }
+        
+        page.draw(orangeParticle);
     };
 };
-
